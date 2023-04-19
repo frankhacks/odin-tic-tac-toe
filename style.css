@@ -1,0 +1,51 @@
+#board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  height: 300px;
+  width: 300px;
+}
+
+.cell {
+  border-style: solid;
+  border-color: black;
+  border-width: 8px;
+  height: 92px;
+  width: 92px;
+}
+
+#cell-0,
+#cell-3,
+#cell-6,
+#cell-1,
+#cell-4,
+#cell-7 {
+  border-right-width: 4px;
+}
+
+#cell-1,
+#cell-4,
+#cell-7,
+#cell-2,
+#cell-5,
+#cell-8 {
+  border-left-width: 4px;
+}
+
+#cell-0,
+#cell-1,
+#cell-2,
+#cell-3,
+#cell-4,
+#cell-5 {
+  border-bottom-width: 4px;
+}
+
+#cell-6,
+#cell-7,
+#cell-8,
+#cell-3,
+#cell-4,
+#cell-5 {
+  border-top-width: 4px;
+}
